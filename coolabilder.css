@@ -14,7 +14,7 @@
     grid-area: header;
     text-align: center;
     font-size: 100px;
-    background-color: pink;
+    background-color: #2e3532;
 }
 nav{
     grid-area: nav;
@@ -23,15 +23,15 @@ nav{
 
 .main{
     grid-area:main;
-    background-color: aqua;
+    background-color: #F1C40F;
 }
 .sidebar{
     grid-area: sidebar;
-    background-color: purple;
+    background-color: #F1C40F;
 }
 .footer{
     grid-area: footer;
-    background-color: blue;
+    background-color: #F1C40F;
 }
 
 
