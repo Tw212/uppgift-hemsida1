@@ -1,8 +1,8 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 25px 3fr 1fr 25px;
-    grid-template-rows: 2fr 1fr 5fr 20fr;
+    grid-template-columns: (1fr,auto);
+    grid-auto-rows: (1fr,auto);
     grid-template-areas: 
     "header header header header"
     "nav nav nav nav"
@@ -10,15 +10,26 @@
     "footer footer footer footer";
 
 }
+body{
+    background-color: #585123;
+}
 .header{
     grid-area: header;
     text-align: center;
     font-size: 100px;
     background-color: #585123;
 }
+
 nav{
+    top: 0;
+    position: sticky;
     grid-area: nav;
     background-color: #011638;
+}
+
+#irontext{
+    grid-area: main;
+    font-size: 20px;
 }
 
 .main{
@@ -26,26 +37,30 @@ nav{
     background-color: #585123;
     font-size: 100px;
 }
+#topl{
+    grid-area: main;
+    background-color: #585123;
+    font-size: 50px;
+}
+
 .sidebar{
     grid-area: sidebar;
     background-color: #585123;
 }
+
 .footer{
     grid-area: footer;
     background-color: #776885;
 }
-#bild{
-    width: 400px; 
-    margin-left:84px ;
-    margin-top: 30px;
-}
+
+
 .sidebar li{
     height: 10px;
 }
 
 
 
-.nav a{
+nav a{
     font-size: 50px;
     color: #cdcdcd;
     text-decoration: none;
@@ -53,24 +68,26 @@ nav{
     display: block;
     text-align: center;
 }
-.nav a:hover{
+nav a:hover{
     background-color: rgb(244, 105, 105);
 }
-.nav li{
+nav li{
     float: left;
 }
-.nav ul{
+nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
 
     overflow: hidden;
-}
-
-
+    border-radius: 30px;
     
+}
+.main h1{
+    font-size: 50px;
+    margin-bottom: 200px;
 
-
+}
 .footer{
     display: flex;
 
