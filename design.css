@@ -1,7 +1,7 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: (1fr,auto);
+    grid-auto-columns: (1fr,auto);
     grid-auto-rows: (1fr,auto);
     grid-template-areas: 
     "header header header header"
@@ -24,7 +24,6 @@ nav{
     top: 0;
     position: sticky;
     grid-area: nav;
-    background-color: #011638;
 }
 
 #irontext{
@@ -52,19 +51,11 @@ nav{
     grid-area: footer;
     background-color: #776885;
 }
-
-
-.sidebar li{
-    height: 10px;
-}
-
-
-
 nav a{
     font-size: 50px;
     color: #cdcdcd;
     text-decoration: none;
-    padding: 15px;
+    padding: 50px;
     display: block;
     text-align: center;
 }
@@ -78,6 +69,7 @@ nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    background-color: #011638;
 
     overflow: hidden;
     border-radius: 30px;
@@ -97,4 +89,20 @@ nav ul{
 }
 .footer img{
     width: 30%;
+}
+#albumbilder img{
+    height: 100px;
+    width: 100px;
+}
+#albumbilder{
+    font-size: 50px;
+    text-align: center;
+}
+thead{
+    background-color: #776885;
+}
+table{
+    margin-top: 100px;
+    border-spacing: 0;
+    width: 100%;
 }
