@@ -1,18 +1,20 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-auto-columns: (1fr,auto);
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-auto-rows: (1fr,auto);
     grid-template-areas: 
     "header header header header"
-    "nav nav nav nav"
-    "main main sidebar sidebar"
+    ". nav nav ."
+    "main main main sidebar"
     "footer footer footer footer";
 
 }
+
 body{
     background-color: #585123;
 }
+
 .header{
     grid-area: header;
     text-align: center;
@@ -24,6 +26,7 @@ nav{
     top: 0;
     position: sticky;
     grid-area: nav;
+    margin-left: 15px;
 }
 
 #irontext{
@@ -36,6 +39,16 @@ nav{
     background-color: #585123;
     font-size: 100px;
 }
+
+#irontexth{
+    text-align: end;
+    margin-right: 350px;
+}
+
+.main ol{
+    margin-left: 350px;
+}
+
 #topl{
     grid-area: main;
     background-color: #585123;
@@ -51,6 +64,7 @@ nav{
     grid-area: footer;
     background-color: #776885;
 }
+
 nav a{
     font-size: 50px;
     color: #cdcdcd;
@@ -59,12 +73,16 @@ nav a{
     display: block;
     text-align: center;
 }
+
 nav a:hover{
     background-color: rgb(244, 105, 105);
+    transition: 1s;
 }
+
 nav li{
     float: left;
 }
+
 nav ul{
     list-style-type: none;
     padding: 0;
@@ -75,34 +93,45 @@ nav ul{
     border-radius: 30px;
     
 }
+
 .main h1{
     font-size: 50px;
     margin-bottom: 200px;
 
 }
+
 .footer{
     display: flex;
 
     justify-content: space-evenly;
    /*  flex-wrap: wrap; */
-
 }
+
 .footer img{
     width: 30%;
 }
+
 #albumbilder img{
     height: 100px;
     width: 100px;
 }
+
 #albumbilder{
     font-size: 50px;
     text-align: center;
 }
+
 thead{
     background-color: #776885;
 }
+
 table{
     margin-top: 100px;
     border-spacing: 0;
     width: 100%;
+}
+#coolabilderflex{
+    display: flex;
+
+    justify-content: space-evenly;
 }
